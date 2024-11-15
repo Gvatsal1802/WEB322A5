@@ -19,7 +19,7 @@ const HTTP_PORT = process.env.PORT || 3000;
 require('pg');
 
 legoData.initialize().then(() => {
-    app.listen(HTTP_PORT, '0.0.0.0', () => {
+    app.listen(HTTP_PORT, '1.1.1.1', () => {
         console.log(`Server started on port ${HTTP_PORT}`);
     });
 }).catch(err => {
