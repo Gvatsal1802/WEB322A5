@@ -30,6 +30,7 @@ legoData.initialize().then(() => {
 app.use(express.static(__dirname + '/public'));
 app.set('views', __dirname + '/views');
 app.set('view engine', 'ejs');
+
 app.get(['/', '/home', '/home.html'], (req, res) => {
     try {
         res.render("home");
