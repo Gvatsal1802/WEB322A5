@@ -17,6 +17,7 @@ const express = require('express');
 const app = express(); 
 const HTTP_PORT = process.env.PORT || 3000;
 
+
 legoData.initialize().then(() => {
     app.listen(HTTP_PORT, '0.0.0.0', () => {
         console.log(`Server started on port ${HTTP_PORT}`);
